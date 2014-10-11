@@ -1,0 +1,15 @@
+language: node_js
+node_js:
+  - "0.11"
+  - "0.10"
+  - "0.8"
+
+deploy:
+  provider: npm
+  email: mark@segfawlt.net
+  api_key:
+    secure: b69VtZ177qblm+OslyBGpfZtgDWBqj6Fkdd51OP6e/dpBX/J/0OMnrtpFWrV5fUeTc24aXNJNZtKiSubo5CI6cjt0XsyXUOzA17L4T7SuxxePBG11shcpI6tP0LWtiC/clwfI+w0vXjRYveM+nScSadxPa7PLuyVM3Mcauwb3LQ=
+  on:
+    tags: true
+    repo: markhuge/gulp-handlebars-render
+    all_branches: true

@@ -1,0 +1,30 @@
+{
+  "name": "gulp-handlebars-render",
+  "version": "0.0.0",
+  "description": "Renders handlebars templates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"YOLO\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/markhuge/gulp-handlebars-render.git"
+  },
+  "keywords": [
+    "gulp",
+    "handlebars",
+    "template",
+    "render"
+  ],
+  "author": "Mark Wilkerson <mark@segfalwt.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/markhuge/gulp-handlebars-render/issues"
+  },
+  "homepage": "https://github.com/markhuge/gulp-handlebars-render",
+  "dependencies": {
+    "gulp-util": "^3.0.1",
+    "handlebars": "^2.0.0",
+    "through2": "^0.6.3"
+  }
+}
