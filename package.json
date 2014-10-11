@@ -1,6 +1,6 @@
 {
   "name": "gulp-handlebars-render",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Renders handlebars templates",
   "main": "index.js",
   "scripts": {
