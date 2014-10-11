@@ -4,7 +4,9 @@
   "description": "Renders handlebars templates",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"YOLO\" && exit 0"
+    "test": "npm run unit && npm run cov",
+    "unit": "mocha -R spec",
+    "cov": "mocha -r blanket -R travis-cov"
   },
   "repository": {
     "type": "git",
@@ -16,6 +18,15 @@
     "template",
     "render"
   ],
+  "config": {
+    "blanket": {
+      "pattern": "index.js",
+      "data-cover-never": "node_modules"
+    },
+    "travis-cov": {
+      "threshold": 80
+    }
+  },
   "author": "Mark Wilkerson <mark@segfalwt.net>",
   "license": "MIT",
   "bugs": {
@@ -26,5 +37,13 @@
     "gulp-util": "^3.0.1",
     "handlebars": "^2.0.0",
     "through2": "^0.6.3"
+  },
+  "devDependencies": {
+    "blanket": "^1.1.6",
+    "chai": "^1.9.2",
+    "event-stream": "^3.1.7",
+    "mocha": "^1.21.4",
+    "travis-cov": "^0.2.5",
+    "vinyl": "^0.4.3"
   }
 }
