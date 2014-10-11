@@ -1,4 +1,4 @@
-gulp-handlerbars-render
+gulp-handlebars-render
 =======================
 
 Renders handlebars templates
